@@ -9,8 +9,9 @@ namespace ReadAndWriteFile_IO
         {
             Console.WriteLine("Welcome File IO Operations");
             FileInputs fileInputs = new FileInputs();
-            fileInputs.ReadFile();
-            fileInputs.WriteFile();
+            //fileInputs.ReadFile();
+            //fileInputs.WriteFile();
+            fileInputs.ReadFromCSV();
         }
     }
 }
