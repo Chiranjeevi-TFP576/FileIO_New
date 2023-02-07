@@ -11,7 +11,8 @@ namespace ReadAndWriteFile_IO
             FileInputs fileInputs = new FileInputs();
             //fileInputs.ReadFile();
             //fileInputs.WriteFile();
-            fileInputs.ReadFromCSV();
+            //fileInputs.ReadFromCSV();
+            fileInputs.ReadFromCSVToJson();
         }
     }
 }

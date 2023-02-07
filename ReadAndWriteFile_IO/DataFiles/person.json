@@ -1,0 +1,52 @@
+[
+  {
+    "FirstName": "john",
+    "LastName": "Doe1",
+    "MobNumber": "9867543218",
+    "Email": "someemail@gmail.com",
+    "Address": "some address",
+    "City": "Vsp",
+    "State": "A.P",
+    "Zip": "531000"
+  },
+  {
+    "FirstName": "john",
+    "LastName": "Doe2",
+    "MobNumber": "1234567890",
+    "Email": "someemail@gmail.com",
+    "Address": "some address",
+    "City": "VSP",
+    "State": "a.p",
+    "Zip": "521000"
+  },
+  {
+    "FirstName": "john",
+    "LastName": "Doe3",
+    "MobNumber": "1234567890",
+    "Email": "someemail@gmail.com",
+    "Address": "some address",
+    "City": "VIZ",
+    "State": "AP",
+    "Zip": "531888"
+  },
+  {
+    "FirstName": "john",
+    "LastName": "Doe4",
+    "MobNumber": "1234567890",
+    "Email": "someemail@gmail.com",
+    "Address": "some address",
+    "City": "VJD",
+    "State": "Ap",
+    "Zip": "531001"
+  },
+  {
+    "FirstName": "john",
+    "LastName": "Doe5",
+    "MobNumber": "1234567890",
+    "Email": "someemail@gmail.com",
+    "Address": "some address",
+    "City": "RJM",
+    "State": "Ap",
+    "Zip": "531222"
+  }
+]

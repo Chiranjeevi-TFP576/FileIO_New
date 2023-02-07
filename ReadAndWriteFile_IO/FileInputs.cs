@@ -8,6 +8,7 @@ using System.IO;
 using System.Formats.Asn1;
 using System.Globalization;
 using CsvHelper;
+using Newtonsoft.Json;
 
 namespace ReadAndWriteFile_IO
 {
@@ -52,10 +53,11 @@ namespace ReadAndWriteFile_IO
 
 
         //UC_14 Read&Write with CSV File
-        public void ReadFromCSV()
+        public void ReadFromCSVToJson()
         {
             string csvpath = @"D:\Batch 244\FileIO_New\ReadAndWriteFile_IO\DataFiles\Addresses.csv";
             string CsvWritePath = @"D:\Batch 244\FileIO_New\ReadAndWriteFile_IO\DataFiles\writeData.csv";
+            string Jsonpath = @"D:\Batch 244\FileIO_New\ReadAndWriteFile_IO\DataFiles\person.json";
 
             using (StreamReader sr = new StreamReader(csvpath))
             using (var csv = new CsvReader(sr, CultureInfo.InvariantCulture))
@@ -78,7 +80,7 @@ namespace ReadAndWriteFile_IO
 
                 //}
 
-                //WriteOperation
+                //UC14_WriteOperation
 
                 using (StreamWriter sw = new StreamWriter(CsvWritePath))
                 using (var csvwriter = new CsvWriter(sw, CultureInfo.InvariantCulture))
@@ -86,6 +88,17 @@ namespace ReadAndWriteFile_IO
                     csvwriter.WriteRecords(records);
                     Console.WriteLine("\n Data SucessFully Written Into CSV File !");
                 }
+
+                //UC15_CSVToJSON File
+
+                JsonSerializer serializer = new JsonSerializer();
+                using (var writer = new StreamWriter(Jsonpath))
+                using (var jsonWriter = new JsonTextWriter(writer))
+                {
+                    jsonWriter.Formatting = Formatting.Indented;
+                    serializer.Serialize(jsonWriter, records);
+                }
+                Console.ReadKey();
 
             }
         }
